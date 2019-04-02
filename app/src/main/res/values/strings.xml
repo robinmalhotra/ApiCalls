@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ApiCalls</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tag">android:switcher:</string>
+
+    <string name="title_activity_splash_screen">API Calls</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">API Calls</string>
+    <string name="error">Error in retrieving data. Please try again</string>
+    <string name="fetching">Fetching...</string>
+    <string name="name">Name</string>
+    <string name="id">Id</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="show_posts">Show Posts</string>
 </resources>
