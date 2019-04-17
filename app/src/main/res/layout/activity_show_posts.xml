@@ -8,13 +8,13 @@
     tools:context=".activity.activity.ShowPostsActivity">
 
     <TextView
-        android:layout_margin="@dimen/margin20"
+        android:layout_margin="@dimen/margin_20dp"
         android:id="@+id/tvUserIdPosts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/fetching"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/textsize_medium"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvUserPosts"
