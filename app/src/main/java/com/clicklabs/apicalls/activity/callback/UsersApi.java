@@ -2,6 +2,7 @@ package com.clicklabs.apicalls.activity.callback;
 
 import com.clicklabs.apicalls.activity.model.User;
 import com.clicklabs.apicalls.activity.model.UserPosts;
+import com.clicklabs.apicalls.activity.util.Constants;
 
 import java.util.ArrayList;
 
@@ -15,7 +16,7 @@ import retrofit2.http.Query;
 
 public interface UsersApi {
 
-    String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    String BASE_URL = Constants.Url.BASE_URL;
 
     @GET("users")
     Call<ArrayList<User>> getUser();

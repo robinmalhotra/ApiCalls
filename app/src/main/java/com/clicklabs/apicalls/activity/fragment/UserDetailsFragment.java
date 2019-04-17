@@ -71,7 +71,6 @@ public class UserDetailsFragment extends Fragment {
                 Intent intent = new Intent(mContext, ShowPostsActivity.class);
                 if(userId!=null){
 
-                    Log.d("yyyyyy", "onClickintent of list frag: " + userId);
                     intent.putExtra(Constants.Keys.USERID,userId);
                 }
                 startActivity(intent);

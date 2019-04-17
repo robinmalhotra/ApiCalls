@@ -15,4 +15,8 @@
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="show_posts">Show Posts</string>
+    <string name="response_toast">Code:</string>
+    <string name="failure_toast">Couldn\'t get Response</string>
+    <string name="failure_toast_1">got thrown</string>
+    <string name="no_internet_toast">Internet connection not found .Please check connection and try again!!</string>
 </resources>

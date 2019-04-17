@@ -77,7 +77,7 @@ public class SplashScreenActivity extends Activity {
         }
         else{
             Toast.makeText(SplashScreenActivity.this,
-                    "Internet connection not found .Please check connection and try again!!",
+                    getString(R.string.no_internet_toast),
                     Toast.LENGTH_SHORT).show();
         }
     }
@@ -101,18 +101,17 @@ public class SplashScreenActivity extends Activity {
             public void onResponse(Call<ArrayList<User>> call, Response<ArrayList<User>> response) {
 
                 if(!response.isSuccessful()){
-                    Toast.makeText(SplashScreenActivity.this,"Code: " + response.code(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SplashScreenActivity.this,getString(R.string.response_toast) + response.code(),Toast.LENGTH_SHORT).show();
                     return;
                 }
                 userArrayList = response.body();
-                Log.d("yyyyyy", "onResponse: " +userArrayList.size());
                 progressBar.setVisibility(View.GONE);
 
             }
 
             @Override
             public void onFailure(Call<ArrayList<User>> call, Throwable t) {
-                Toast.makeText(SplashScreenActivity.this,"Couldn't get Response" + t + " got thrown",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SplashScreenActivity.this,getString(R.string.failure_toast) + t + getString(R.string.failure_toast_1),Toast.LENGTH_SHORT).show();
             }
         });
 

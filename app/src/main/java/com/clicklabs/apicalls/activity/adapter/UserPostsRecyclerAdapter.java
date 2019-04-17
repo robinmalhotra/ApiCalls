@@ -21,7 +21,6 @@ public class UserPostsRecyclerAdapter extends RecyclerView.Adapter<UserPostsRecy
 
     public UserPostsRecyclerAdapter(ArrayList<UserPosts> userPostsAdapterList) {
         this.userPostsAdapterList = userPostsAdapterList;
-        Log.d("yyyyyy", "UserPostsRecyclerAdapter: " +userPostsAdapterList.size());
     }
 
     @NonNull

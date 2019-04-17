@@ -16,6 +16,11 @@ public interface Constants {
         String NOUSERSELECTED = "No Users Selected Yet. Please Choose from above";
     }
 
+    interface Url {
+
+        String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    }
+
 
 
 
